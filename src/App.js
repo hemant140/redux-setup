@@ -1,17 +1,17 @@
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import User from './Pages/User';
-import Header from './components/Header';
+import Header from './layout/Header';
+import Stopwatch from "./Pages/Stopwatch";
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <Header />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<User />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+      <Routes>
+        <Route path="/" element={<Stopwatch />} />
+        <Route path="/user" element={<User />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

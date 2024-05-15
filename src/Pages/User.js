@@ -65,7 +65,7 @@ function User() {
     })
     return (
         <div className="user-page">
-            <div className="buttonTitle">
+            <div className="header-h1">
                 <h1 >Users</h1>
             </div>
             <div className='mt-3'>
@@ -75,8 +75,6 @@ function User() {
                     loading={loading}
                 />
             </div>
-
-
         </div>
     )
 }
