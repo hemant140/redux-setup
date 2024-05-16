@@ -47,7 +47,7 @@ function User() {
 
     useEffect(() => {
         dispatch(getUser())
-    }, [])
+    }, [dispatch])
 
 
     const dataSource = userResult && userResult.length > 0 && userResult.map((user, index) => {
